@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	 <script>
+      function showIMG2()
+      {
+        document.images[0].src="disney6.jpg"; 
+      }
+
+      function showIMG1()
+      {
+        document.images[0].src="disney5.jpg"; 
+      }
+    </script>
+  </head>
+  <body>
+    <img src="disney5.jpg" width="250"
+	  onmouseover="javascript:showIMG2();" 
+      onmouseout="javascript:showIMG1();">
+  </body>
+</html>

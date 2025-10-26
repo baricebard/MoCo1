@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>我的網頁</title>
+  </head>
+  <body>
+    <div>字串的前後加上單引號 '...' 或雙引號 "..."</div>
+    <div>逸出字元 \ (或稱轉義字元)</div>
+    <div></div>
+    <script>
+      console.log("\"")
+      console.log('\'')
+      console.log("\\")
+      console.log("abc\bcdf")
+      console.log("abc\fcdf 換行 Form Feed")
+      console.log("abc\ncdf 換行 New Line")
+      console.log("abc\rcdf 換行 Carriage Return")
+      console.log("abc\tcdf")
+      console.log('---')
+      console.log('Welcome'.charCodeAt(0))
+      console.log('Welcome'.charCodeAt(1))
+      console.log('Welcome'.charCodeAt(2))
+      console.log('---')
+      console.log('好'.charCodeAt(0))
+      console.log('歡迎'.charCodeAt(0))
+      console.log('歡迎'.charCodeAt(1))
+      console.log('---')
+      console.log(String.prototype.charCodeAt.call('歡迎',0))
+      console.log(String.prototype.charCodeAt.call('歡迎',1))
+      console.log(String.fromCharCode(22909))
+    </script>
+  </body>
+</html>
